@@ -11,12 +11,12 @@
     {
       "language": "en",
       "name": "English",
-      "path": "/"
+      "path": "/en/"
     },
     {
       "language": "pt",
       "name": "Portugues",
-      "path": "/"
+      "path": "/pt/"
     }
   ],
   "plugins": {},

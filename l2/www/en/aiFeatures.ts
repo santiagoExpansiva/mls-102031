@@ -1,4 +1,4 @@
-/// <mls fileReference="_102031_/l2/en/ai-features.ts" enhancement="_102020_enhancementAura"/>
+/// <mls fileReference="_102031_/l2/www/en/aiFeatures.ts" enhancement="_102020_enhancementAura"/>
 
  import { html } from 'lit'; 
  import { customElement } from 'lit/decorators.js';
@@ -90,7 +90,7 @@ const messages: { [key: string]: MessageType } = {
 }
 /// **collab_i18n_end**
 
- @customElement('en--ai-features-102031')
+ @customElement('www--en--ai-features-102031')
  export class AiFeaturesEn102031 extends CollabLitElement {
     
      private myMessage: MessageType = messages['en'];
