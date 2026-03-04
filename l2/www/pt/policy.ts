@@ -1,10 +1,10 @@
-/// <mls fileReference="_102031_/l2/pt/policy.ts" enhancement="_102020_enhancementAura"/>
+/// <mls fileReference="_102031_/l2/www/pt/policy.ts" enhancement="_102020_enhancementAura"/>
 
  import { html } from 'lit'; 
  import { customElement } from 'lit/decorators.js';
  import { CollabLitElement } from '/_100554_/l2/collabLitElement.js';
 
- @customElement('pt--policy-102031')
+ @customElement('www--pt--policy-102031')
  export class PolicyPt102031 extends CollabLitElement {
     
      private _goBack() {
