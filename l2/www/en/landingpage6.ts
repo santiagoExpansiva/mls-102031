@@ -8,8 +8,8 @@ import { globalState, initState, setState } from '/_100554_/l2/collabState.js';
 export class Landingpage6102031 extends CollabPageElement {
     initPage() {
         this.setEvents();
-        
     }
+
     setEvents() {
         const observerOptions = {
             root: null,
@@ -26,6 +26,7 @@ export class Landingpage6102031 extends CollabPageElement {
         }, observerOptions);
 
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    
     }
 }
 
