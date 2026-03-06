@@ -1,0 +1,37 @@
+/// <mls fileReference="_102031_/l2/www/en/landingpage.less" enhancement="enhancementStyle"/>
+
+www--en--landingpage-102031 {
+
+    .hero-bg {
+        background: linear-gradient(rgba(10, 15, 30, 0.8), rgba(10, 15, 30, 0.95)),
+            url('https://collab.codes/www/20260203090434/pt/l3/_100529_/images/startl7.avif');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .bg-dot-pattern {
+        background-image: radial-gradient(#3b82f6 0.8px, transparent 0.8px);
+        background-size: 32px 32px;
+    }
+
+    .glass-card {
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    /* --- EFEITO REVEAL ON SCROLL --- */
+    .reveal {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+
+}
+
