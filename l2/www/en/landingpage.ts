@@ -33,10 +33,23 @@ export class Landingpage102031 extends CollabPageElement {
     }
 
     setLoginEvent() {
-        const btnLogin = document.querySelector('#btnLogin');
-        if (btnLogin) {
-            btnLogin.addEventListener('click', this._handleSignIn);
-        }
+
+        const buttons = document.querySelectorAll('.btn-login');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', (event) => {
+                event.preventDefault();
+                alert('Coming soon. Please check back shortly.');
+                /*
+                const params = {
+                    type: 'iframeL7',
+                    action: 'login'
+                };
+                window.parent.postMessage(params, '*');
+                */
+            });
+        });
+
     }
 
     _handleSignIn() {
