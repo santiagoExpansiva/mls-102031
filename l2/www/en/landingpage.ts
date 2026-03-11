@@ -238,7 +238,7 @@ export class Landingpage102031 extends CollabLandingPage {
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 ${group.videos.map((video: Video) => `
-                    <div class="video-card group cursor-pointer" onclick="alert('Está sendo produzido')">
+                    <div class="video-card group cursor-pointer" onclick="alert('Coming soon')">
                         <div class="relative aspect-video bg-slate-100 dark:bg-slate-900 rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 mb-4 transition-all group-hover:border-blue-500/50 group-hover:shadow-lg group-hover:shadow-blue-500/10">
                             <div class="absolute inset-0 flex items-center justify-center">
                                 <div class="w-12 h-12 bg-white/10 backdrop-blur-xl rounded-full flex items-center justify-center group-hover:scale-110 transition-transform border border-white/20">
