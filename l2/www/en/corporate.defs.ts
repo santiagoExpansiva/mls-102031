@@ -1,10 +1,10 @@
-/// <mls fileReference="_102031_/l2/www/en/collabMessages.defs.ts" enhancement="_blank" />
+/// <mls fileReference="_102031_/l2/www/en/corporate.defs.ts" enhancement="_blank" />
 
 // Do not change – automatically generated code. 
 
 export const asis: mls.defs.AsIs = {
   "meta": {
-    "fileReference": "_102031_/l2/www/en/collabMessages.ts",
+    "fileReference": "_102031_/l2/www/en/corporate.ts",
     "componentType": "page",
     "componentScope": "appFrontEnd",
     "languages": [
@@ -13,7 +13,7 @@ export const asis: mls.defs.AsIs = {
   },
   "references": {
     "webComponents": [
-      "www--en--collab-messages-102031"
+      "www--en--corporate-102031"
     ],
     "imports": [
       {
@@ -35,10 +35,10 @@ export const asis: mls.defs.AsIs = {
         ]
       },
       {
-        "ref": "/_100554_/l2/collabPageElement.js",
+        "ref": "/_100554_/l2/collabLandingPage.js",
         "dependencies": [
           {
-            "name": "CollabPageElement",
+            "name": "CollabLandingPage",
             "type": "class"
           }
         ]
@@ -52,11 +52,11 @@ export const asis: mls.defs.AsIs = {
   },
   "asIs": {
     "semantic": {
-      "generalDescription": "TypeScript class CollabMessagesEn102031 extending CollabPageElement",
+      "generalDescription": "TypeScript class CorporateEn102031 extending CollabLandingPage",
       "businessCapabilities": [],
       "technicalCapabilities": [
-        "Extends CollabPageElement",
-        "Decorated with customElement www--en--collab-messages-102031",
+        "Extends CollabLandingPage",
+        "Decorated with customElement www--en--corporate-102031",
         "Implements initPage method"
       ],
       "implementedFeatures": [],
