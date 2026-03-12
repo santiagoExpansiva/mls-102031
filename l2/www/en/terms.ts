@@ -1,4 +1,4 @@
-/// <mls fileReference="_102031_/l2/www/en/terms.ts" enhancement="_102032_enhancementLandingPage" />
+/// <mls fileReference="_102031_/l2/www/en/terms.ts" enhancement="_102032_/l2/enhancementLandingPage" />
 
 import { LitElement } from 'lit';
 import { customElement } from 'lit/decorators.js';

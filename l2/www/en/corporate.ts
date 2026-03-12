@@ -1,4 +1,4 @@
-/// <mls fileReference="_102031_/l2/www/en/corporate.ts" enhancement="_102032_enhancementLandingPage"/>
+/// <mls fileReference="_102031_/l2/www/en/corporate.ts" enhancement="_102032_/l2/enhancementLandingPage"/>
 
  import { customElement } from 'lit/decorators.js';
  import { CollabLandingPage } from '_102032_/l2/collabLandingPage'; 
