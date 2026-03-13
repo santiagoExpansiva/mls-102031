@@ -62,3 +62,14 @@ jobs:
         fi
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Deploy to Cloudflare Pages
+      uses: cloudflare/pages-action@v1  # use v1 (é a mais atual e recomendada)
+      with:
+        apiToken: ${{ vars.CLOUDFLARE_API_TOKEN }}
+        accountId: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+        projectName: expansiva-mls-102031  # exato nome no dashboard
+        directory: l2/dist/20260313134743/en   
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
