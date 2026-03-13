@@ -1,0 +1,676 @@
+
+            <html>
+            <head>
+                <link ref="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet"/>
+                <style>
+            :root{
+	--text-primary-color-lighter: #535353;
+	--text-primary-color-lighter-hover: #5f5f5f;
+	--text-primary-color-lighter-focus: #4a4a4a;
+	--text-primary-color-lighter-disabled: #696969;
+	--text-primary-color: #403f3f;
+	--text-primary-color-hover: #4b4a4a;
+	--text-primary-color-focus: #353434;
+	--text-primary-color-disabled: #525151;
+	--text-primary-color-darker: #000000;
+	--text-primary-color-darker-hover: #1a1a1a;
+	--text-primary-color-darker-focus: #0d0d0d;
+	--text-primary-color-darker-disabled: #262626;
+	--text-secondary-color-lighter: #408EC8;
+	--text-secondary-color-lighter-hover: #4a9adb;
+	--text-secondary-color-lighter-focus: #377bb0;
+	--text-secondary-color-lighter-disabled: #629fd2;
+	--text-secondary-color: #1C91CD;
+	--text-secondary-color-hover: #2a9edb;
+	--text-secondary-color-focus: #1786b7;
+	--text-secondary-color-disabled: #55b4e1;
+	--text-secondary-color-darker: #0F6FA9;
+	--text-secondary-color-darker-hover: #1b7bb5;
+	--text-secondary-color-darker-focus: #0c6495;
+	--text-secondary-color-darker-disabled: #3a9ec1;
+	--bg-primary-color-lighter: #ffffff;
+	--bg-primary-color-lighter-hover: #f2f2f2;
+	--bg-primary-color-lighter-focus: #e6e6e6;
+	--bg-primary-color-lighter-disabled: #d9d9d9;
+	--bg-primary-color: #ffffff;
+	--bg-primary-color-hover: #f2f2f2;
+	--bg-primary-color-focus: #e6e6e6;
+	--bg-primary-color-disabled: #d9d9d9;
+	--bg-primary-color-darker: #fafafa;
+	--bg-primary-color-darker-hover: #f5f5f5;
+	--bg-primary-color-darker-focus: #eeeeee;
+	--bg-primary-color-darker-disabled: #e0e0e0;
+	--bg-secondary-color-lighter: #F9F9F9;
+	--bg-secondary-color-lighter-hover: #f4f4f4;
+	--bg-secondary-color-lighter-focus: #efefef;
+	--bg-secondary-color-lighter-disabled: #eaeaea;
+	--bg-secondary-color: #E6E6E6;
+	--bg-secondary-color-hover: #d9d9d9;
+	--bg-secondary-color-focus: #cccccc;
+	--bg-secondary-color-disabled: #bfbfbf;
+	--bg-secondary-color-darker: #C0C0C0;
+	--bg-secondary-color-darker-hover: #b3b3b3;
+	--bg-secondary-color-darker-focus: #a6a6a6;
+	--bg-secondary-color-darker-disabled: #999999;
+	--grey-color-lighter: #F9FAFB;
+	--grey-color-light: #F2F2F2;
+	--grey-color: #E6E6E6;
+	--grey-color-dark: #D3D3D3;
+	--grey-color-darker: #C0C0C0;
+	--error-color: #FF4D4F;
+	--error-color-hover: #ff6666;
+	--error-color-focus: #e63e3e;
+	--error-color-disabled: #ff9999;
+	--success-color: #52C41A;
+	--success-color-hover: #66d93f;
+	--success-color-focus: #4ca610;
+	--success-color-disabled: #8cd78e;
+	--warning-color: #FAAD14;
+	--warning-color-hover: #fbbd34;
+	--warning-color-focus: #e09a0e;
+	--warning-color-disabled: #fdd55e;
+	--info-color: #0a6dc9;
+	--info-color-hover: #1b7edb;
+	--info-color-focus: #006ab3;
+	--info-color-disabled: #66a8e1;
+	--active-color: #1890FF;
+	--active-color-hover: #1a99ff;
+	--active-color-focus: #0e80cc;
+	--active-color-disabled: #66b3ff;
+	--link-color: #1890FF;
+	--link-color-hover: #1a99ff;
+	--link-color-focus: #0e80cc;
+	--link-color-disabled: #66b3ff;
+	--font-base-unit: .25rem;
+	--font-family-primary: 'Charlie Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+	--font-family-secondary: serif;
+	--font-size-12: calc(var(--font-base-unit) * 3);
+	--font-size-16: calc(var(--font-base-unit) * 4);
+	--font-size-20: calc(var(--font-base-unit) * 5);
+	--font-size-24: calc(var(--font-base-unit) * 6);
+	--font-size-40: calc(var(--font-base-unit) * 10);
+	--font-size-48: calc(var(--font-base-unit) * 12);
+	--font-size-64: calc(var(--font-base-unit) * 16);
+	--line-height-base-unit: 1;
+	--line-height-small: calc(var(--line-height-base-unit) * 1.1);
+	--line-height-medium: calc(var(--line-height-base-unit) * 1.3);
+	--line-height-large: calc(var(--line-height-base-unit) * 1.5);
+	--font-weight-lighter: 100;
+	--font-weight-light: 200;
+	--font-weight-normal: 400;
+	--font-weight-bold: 700;
+	--font-weight-bolder: 900;
+	--breakpoint-small: 544px;
+	--breakpoint-medium: 768px;
+	--breakpoint-large: 1012px;
+	--transition-slow: 0.2s;
+	--transition-normal: 0.3s;
+	--transition-fast: 0.5s;
+	--space-base-unit: 0.25rem;
+	--space-8: calc(var(--space-base-unit) * 2);
+	--space-16: calc(var(--space-base-unit) * 4);
+	--space-24: calc(var(--space-base-unit) * 6);
+	--space-32: calc(var(--space-base-unit) * 8);
+	--space-40: calc(var(--space-base-unit) * 10);
+	--space-48: calc(var(--space-base-unit) * 12);
+	--space-64: calc(var(--space-base-unit) * 16);
+}
+[data-theme="dark"] {
+	--text-primary-color-lighter: #FFFFFF;
+	--text-primary-color-lighter-hover: #f2f2f2;
+	--text-primary-color-lighter-focus: #e6e6e6;
+	--text-primary-color-lighter-disabled: #d9d9d9;
+	--text-primary-color: #e6edf3;
+	--text-primary-color-hover: #d1d9e4;
+	--text-primary-color-focus: #c3cfd8;
+	--text-primary-color-disabled: #b0b8c4;
+	--text-primary-color-darker: #8d96a0;
+	--text-primary-color-darker-hover: #a1aab0;
+	--text-primary-color-darker-focus: #7a828a;
+	--text-primary-color-darker-disabled: #b1b7bd;
+	--text-secondary-color-lighter: #5294c7;
+	--text-secondary-color-lighter-hover: #63a2d8;
+	--text-secondary-color-lighter-focus: #4787b2;
+	--text-secondary-color-lighter-disabled: #78b0e0;
+	--text-secondary-color: #56a8d1;
+	--text-secondary-color-hover: #68b8e0;
+	--text-secondary-color-focus: #4b9cc4;
+	--text-secondary-color-disabled: #80c4e5;
+	--text-secondary-color-darker: #bddef3;
+	--text-secondary-color-darker-hover: #c7e3f5;
+	--text-secondary-color-darker-focus: #a3c8e5;
+	--text-secondary-color-darker-disabled: #d3e9f7;
+	--bg-primary-color-lighter: #666666;
+	--bg-primary-color-lighter-hover: #7a7a7a;
+	--bg-primary-color-lighter-focus: #5c5c5c;
+	--bg-primary-color-lighter-disabled: #808080;
+	--bg-primary-color: #0d1117;
+	--bg-primary-color-hover: #1a1f24;
+	--bg-primary-color-focus: #0a0e13;
+	--bg-primary-color-disabled: #2b3036;
+	--bg-primary-color-darker: #262626;
+	--bg-primary-color-darker-hover: #333333;
+	--bg-primary-color-darker-focus: #1f1f1f;
+	--bg-primary-color-darker-disabled: #404040;
+	--bg-secondary-color-lighter: #636363;
+	--bg-secondary-color-lighter-hover: #757575;
+	--bg-secondary-color-lighter-focus: #4e4e4e;
+	--bg-secondary-color-lighter-disabled: #808080;
+	--bg-secondary-color: #161b22;
+	--bg-secondary-color-hover: #1f2329;
+	--bg-secondary-color-focus: #0f1418;
+	--bg-secondary-color-disabled: #2c3238;
+	--bg-secondary-color-darker: #4b3f3f;
+	--bg-secondary-color-darker-hover: #5b4f4f;
+	--bg-secondary-color-darker-focus: #3f2f2f;
+	--bg-secondary-color-darker-disabled: #6a5c5c;
+	--grey-color-lighter: #2B2B2B;
+	--grey-color-light: #414141;
+	--grey-color: #575757;
+	--grey-color-dark: #6D6D6D;
+	--grey-color-darker: #969494;
+	--error-color: #f9676a;
+	--error-color-hover: #ff7b7f;
+	--error-color-focus: #e5565e;
+	--error-color-disabled: #ff9b9e;
+	--success-color: #63d42b;
+	--success-color-hover: #75d93d;
+	--success-color-focus: #55b825;
+	--success-color-disabled: #8ade5f;
+	--warning-color: #eead2b;
+	--warning-color-hover: #f2b73d;
+	--warning-color-focus: #d69c1f;
+	--warning-color-disabled: #f5cd5c;
+	--info-color: #0b81ef;
+	--info-color-hover: #1a95f6;
+	--info-color-focus: #0073d8;
+	--info-color-disabled: #66b3ef;
+	--active-color: #0b81ef;
+	--active-color-hover: #1a95f6;
+	--active-color-focus: #0073d8;
+	--active-color-disabled: #66b3ef;
+	--link-color: #0b81ef;
+	--link-color-hover: #1a95f6;
+	--link-color-focus: #0073d8;
+	--link-color-disabled: #66b3ef;
+}
+             {
+  /* cyrillic-ext */
+  /* cyrillic */
+  /* greek-ext */
+  /* greek */
+  /* vietnamese */
+  /* latin-ext */
+  /* latin */
+  /* cyrillic-ext */
+  /* cyrillic */
+  /* greek-ext */
+  /* greek */
+  /* vietnamese */
+  /* latin-ext */
+  /* latin */
+  /* cyrillic-ext */
+  /* cyrillic */
+  /* greek-ext */
+  /* greek */
+  /* vietnamese */
+  /* latin-ext */
+  /* latin */
+  /* cyrillic-ext */
+  /* cyrillic */
+  /* greek-ext */
+  /* greek */
+  /* vietnamese */
+  /* latin-ext */
+  /* latin */
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2ZL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1pL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2pL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2ZL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1pL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2pL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2ZL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1pL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2pL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2ZL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1pL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2pL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+ .logo-c {
+  height: 32px;
+  vertical-align: middle;
+  display: inline-block;
+  margin-top: -10px;
+}
+
+            </style>
+            </head>
+            <body>
+                <div
+	class='bg-gray-50 text-gray-800 dark:bg-gray-950 dark:text-gray-300 transition-colors duration-300 antialiased'>
+	<nav
+		class='sticky top-0 z-50 bg-white/80 dark:bg-gray-950/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800'>
+		<div
+			class='max-w-4xl mx-auto px-6 py-4 flex justify-between items-center'>
+			<a
+				href='javascript:history.back()'
+				class='flex items-center text-xl font-bold dark:text-white'>
+				<img
+					src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjYwIiBoZWlnaHQ9IjYwIiBmaWxsPSJ0cmFuc3BhcmVudCIgLz4KICA8dGV4dCB4PSIzMCIgeT0iNTYiIGZvbnQtZmFtaWx5PSJWZXJkYW5hIiBmb250LXNpemU9IjcyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzQyODVGNCI+QzwvdGV4dD4KICA8dGV4dCB4PSI0MCIgeT0iNDAiIGZvbnQtZmFtaWx5PSJWZXJkYW5hIiBmb250LXNpemU9IjM4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0VBNDMzNSI+YzwvdGV4dD4KPC9zdmc+Cg=='
+					alt='C'
+					class='logo-c'>
+				</img>
+				ollab.codes
+			</a>
+			<a
+				href='javascript:history.back()'
+				class='text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline'>
+				Back
+			</a>
+		</div>
+	</nav>
+	<main
+		class='max-w-4xl mx-auto px-6 py-12 md:py-20'>
+		<div
+			class='bg-white dark:bg-gray-900 rounded-3xl p-8 md:p-12 shadow-sm border border-gray-100 dark:border-gray-800'>
+			<header
+				class='border-b border-gray-100 dark:border-gray-800 pb-8 mb-8'>
+				<h1
+					class='text-4xl font-bold text-gray-900 dark:text-white mb-2'>
+					Terms of Service
+				</h1>
+				<p
+					class='text-sm text-gray-500 dark:text-gray-400'>
+					Last updated: February 20, 2026
+				</p>
+			</header>
+			<article
+				class='prose prose-blue dark:prose-invert max-w-none space-y-8'>
+				<section>
+					<p
+						class='leading-relaxed'>
+						These Terms of Service ("Terms") govern your use of the Collab platform operated by
+						<strong>
+							Collab Engine Inc.
+						</strong>
+						By accessing or using the platform, you agree to be bound by these Terms.
+					</p>
+				</section>
+				<section>
+					<h2
+						class='text-2xl font-bold text-gray-900 dark:text-white mb-4'>
+						1. Description of Service
+					</h2>
+					<p>
+						Collab is a software platform that enables users to design, build, and operate applications using artificial intelligence. The platform is provided "as is" and may evolve over time as we introduce new features and improvements.
+					</p>
+				</section>
+				<section>
+					<h2
+						class='text-2xl font-bold text-gray-900 dark:text-white mb-4'>
+						2. Eligibility
+					</h2>
+					<p>
+						You must use a valid account from Google, GitHub, or GitLab to access the platform. You are solely responsible for maintaining the security of your external account and for any activity that occurs under your profile.
+					</p>
+				</section>
+				<section>
+					<h2
+						class='text-2xl font-bold text-gray-900 dark:text-white mb-4'>
+						3. Acceptable Use
+					</h2>
+					<p
+						class='mb-4'>
+						You agree not to:
+					</p>
+					<ul
+						class='list-disc pl-6 space-y-2'>
+						<li>
+							Use the platform for any illegal or unauthorized activities.
+						</li>
+						<li>
+							Attempt to gain unauthorized access to our systems or other users' accounts.
+						</li>
+						<li>
+							Interfere with or disrupt the operation of the platform.
+						</li>
+						<li>
+							Abuse, threaten, or disrupt the service for other users.
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h2
+						class='text-2xl font-bold text-gray-900 dark:text-white mb-4'>
+						4. Intellectual Property
+					</h2>
+					<p
+						class='mb-4'>
+						The Collab platform, including its software, design, brand assets, and original content, is the exclusive property of
+						<strong>
+							Collab Engine Inc.
+						</strong>
+					</p>
+					<div
+						class='p-4 bg-green-50 dark:bg-green-900/20 rounded-xl text-green-800 dark:text-green-300 border border-green-100 dark:border-green-800/30 text-sm italic'>
+						<strong>
+							User Ownership:
+						</strong>
+						You retain full ownership of any code, applications, or content you create using the platform's tools.
+					</div>
+				</section>
+				<section>
+					<h2
+						class='text-2xl font-bold text-gray-900 dark:text-white mb-4'>
+						5. Account Termination
+					</h2>
+					<p>
+						We reserve the right to suspend or terminate your access if you violate these Terms or misuse the platform in a way that harms the service. You may stop using the platform and request account deletion at any time.
+					</p>
+				</section>
+				<section>
+					<h2
+						class='text-2xl font-bold text-gray-900 dark:text-white mb-4'>
+						6. Disclaimer of Warranties
+					</h2>
+					<p
+						class='uppercase text-xs tracking-wider font-bold text-gray-500 mb-2'>
+						Legal Disclaimer
+					</p>
+					<p>
+						The platform is provided "as is" and "as available" without warranties of any kind, either express or implied. We do not guarantee that the service will be uninterrupted, secure, or error-free.
+					</p>
+				</section>
+				<section>
+					<h2
+						class='text-2xl font-bold text-gray-900 dark:text-white mb-4'>
+						7. Limitation of Liability
+					</h2>
+					<p>
+						To the maximum extent permitted by law, Collab Engine Inc. shall not be liable for any indirect, incidental, or consequential damages arising out of your use or inability to use the platform.
+					</p>
+				</section>
+				<section>
+					<h2
+						class='text-2xl font-bold text-gray-900 dark:text-white mb-4'>
+						8. Changes to Terms
+					</h2>
+					<p>
+						We may update these Terms from time to time to reflect changes in our service or legal requirements. Continued use of the platform after updates constitutes your acceptance of the revised Terms.
+					</p>
+				</section>
+				<section>
+					<h2
+						class='text-2xl font-bold text-gray-900 dark:text-white mb-4'>
+						9. Governing Law
+					</h2>
+					<p>
+						These Terms are governed by and construed in accordance with the laws of the
+						<strong>
+							State of Delaware, United States
+						</strong>
+						, without regard to its conflict of law principles.
+					</p>
+				</section>
+				<section
+					class='border-t border-gray-100 dark:border-gray-800 pt-8 mt-12'>
+					<h2
+						class='text-2xl font-bold text-gray-900 dark:text-white mb-4'>
+						10. Contact
+					</h2>
+					<div
+						class='bg-gray-50 dark:bg-gray-800/50 p-6 rounded-2xl border border-gray-100 dark:border-gray-800'>
+						<p
+							class='font-bold text-gray-900 dark:text-white'>
+							Collab Engine Inc.
+						</p>
+						<p>
+							Email:
+							<a
+								href='mailto:legal@collab.codes'
+								class='text-blue-600 dark:text-blue-400'>
+								legal@collab.codes
+							</a>
+						</p>
+						<p>
+							Website:
+							<a
+								href='https://collab.codes'
+								class='text-blue-600 dark:text-blue-400'>
+								https://collab.codes
+							</a>
+						</p>
+					</div>
+				</section>
+			</article>
+		</div>
+	</main>
+	<footer
+		class='py-12 text-center text-gray-400 dark:text-gray-600 text-xs border-t border-gray-100 dark:border-gray-900 bg-white dark:bg-gray-950'>
+		<p>
+			© 2026 Collab Engine Inc. All rights reserved.
+		</p>
+	</footer>
+</div>
+                <script type=>
+                    
+                </script> 
+                <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>,
+                
+            </body> 
+            </html>  
+        
