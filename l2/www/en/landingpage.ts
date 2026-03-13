@@ -239,7 +239,13 @@ function setLoginEvent() {
     buttons.forEach(button => {
         button.addEventListener('click', (event) => {
             event.preventDefault();
-            alert('Coming soon. Please check back shortly.');
+                //alert('Coming soon. Please check back shortly.');
+                
+                const params = {
+                    type: 'iframeL7',
+                    action: 'login'
+                };
+                window.parent.postMessage(params, '*');
 
 
 
