@@ -3,6 +3,8 @@
 export const projectConfig = {
     masterFrontEnd: {
         build: '',
+        generateDist: '_102032_/l2/pluginGenerateDist',
+        variableVersion: 'ACTUAL_VERSION',// Variavel no git a ser atualizada com a versão do dist
         start: '',
         liveView: '',
         preview: '/_102032_/l2/previewModeLandingPage.js',
