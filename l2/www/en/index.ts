@@ -7,7 +7,7 @@ function prepareNavigation() {
     const browserLang = (navigator.language || DEFAULT)
         .slice(0, 2)
         .toLowerCase();
-    console.info(browserLang)
+    
     const lang = SUPPORTED.includes(browserLang as Lang) ? browserLang as Lang : DEFAULT;
 
     const messages: Record<Lang, string> = {
