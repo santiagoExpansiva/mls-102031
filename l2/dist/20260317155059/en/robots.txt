@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Block only
+Disallow: /assets/
+
+Sitemap: https://www.collab.codes/sitemap.xml
