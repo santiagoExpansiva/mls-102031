@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Bloqueia apenas a pasta de assets para não poluir resultados de busca com imagens isoladas
+Disallow: /assets/
+
+Sitemap: https://collab.codes/sitemap.xml
