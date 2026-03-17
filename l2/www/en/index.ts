@@ -172,9 +172,9 @@ function renderVideoSection(sectionVideos: SectionVideos): void {
         <div class="reveal">
             <div class="mb-10">
                 <div class="flex items-center gap-4 mb-2">
-                    <h4 class="text-2xl font-black tracking-tighter text-slate-900 dark:text-white uppercase italic">
+                    <h3 class="text-2xl font-black tracking-tighter text-slate-900 dark:text-white uppercase italic">
                         ${groupTitle}
-                    </h4>
+                    </h3>
                     <div class="h-px bg-slate-100 dark:bg-slate-800 flex-grow"></div>
                 </div>
                 <p class="text-sm text-slate-500 font-medium">${groupDescription}</p>
@@ -192,7 +192,7 @@ function renderVideoSection(sectionVideos: SectionVideos): void {
                                 </div>
                             </div>
                         </div>
-                        <h5 class="font-bold text-sm mb-1 group-hover:text-blue-600 transition-colors">${video.title}</h5>
+                        <h3 class="font-bold text-sm mb-1 group-hover:text-blue-600 transition-colors">${video.title}</h3>
                         <p class="text-[11px] text-slate-500 leading-relaxed line-clamp-2">${video.description}</p>
                     </div>
                 `).join('')}
@@ -230,13 +230,18 @@ function setLoginEvent() {
     buttons.forEach(button => {
         button.addEventListener('click', (event) => {
             event.preventDefault();
-                // alert('Coming soon. Please check back shortly.');
+
+            const isInsideIframe = window.self !== window.top;
+
+            if (isInsideIframe) {
                 const params = {
                     type: 'iframeL7',
                     action: 'login'
                 };
                 window.parent.postMessage(params, '*');
-
+            } else {
+                window.location.href = 'https://on.collab.codes/?signin';
+            }
         });
     });
 
