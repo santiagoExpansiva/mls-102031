@@ -1,5 +1,5 @@
 /// <mls fileReference="_102031_/l2/www/en/index.ts" enhancement="_102032_/l2/enhancementLandingPage" />
-class Index {
+class IndexPage {
     constructor() { 
         this.setEvents();
     }
@@ -155,19 +155,15 @@ class Index {
             return;
         }
 
-        // Título Principal
         mainTitle.textContent = sectionVideos.title as string;
 
-        // Função auxiliar para formatar a chave (ex: real_product -> Real Product)
         const formatKey = (key: string): string => {
             return key.split('_')
                 .map(word => word.charAt(0).toUpperCase() + word.slice(1))
                 .join(' ');
         };
 
-        // Iterar sobre as entradas do objeto
         Object.entries(sectionVideos).forEach(([key, value]) => {
-            // Pulamos a chave 'title' que é o título geral da seção
             if (key === 'title' || typeof value === 'string') return;
 
             const group = value as VideoGroup;
@@ -278,7 +274,6 @@ class Index {
         const modalContent = document.getElementById('modal-content');
         if (!modal || !modalContent) return;
         modal.classList.remove('hidden');
-        // Pequeno timeout para permitir que a transição de CSS aconteça
         setTimeout(() => {
             modalContent.classList.remove('translate-y-full');
         }, 10);
@@ -312,4 +307,4 @@ class Index {
     }
 }
 
-new Index();
+new IndexPage();
