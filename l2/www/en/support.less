@@ -1,0 +1,33 @@
+/// <mls fileReference="_102031_/l2/www/en/support.less" enhancement="enhancementStyle"/>
+
+www--en--support-102031 {
+
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .hero-bg {
+            background: linear-gradient(rgba(10, 15, 30, 0.9), rgba(10, 15, 30, 0.98)), 
+                        url('./assets/images/hero.avif');
+            background-size: cover; background-position: center;
+        }
+        .bg-dot-pattern {
+            background-image: radial-gradient(#3b82f6 0.8px, transparent 0.8px);
+            background-size: 32px 32px;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+
+ }
+
+

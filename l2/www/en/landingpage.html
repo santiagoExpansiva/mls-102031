@@ -25,11 +25,6 @@
 					class='hover:text-blue-600 transition'>
 					How it Works
 				</a>
-				<a
-					href='#examples'
-					class='hover:text-blue-600 transition'>
-					Examples
-				</a>
 			</div>
 			<button
 				class='bg-blue-600 text-white px-8 py-2.5 rounded-full text-xs font-bold shadow-lg hover:bg-blue-700 transition-all btn-login'>
@@ -73,7 +68,7 @@
 			<div
 				class='flex flex-col md:flex-row gap-6 justify-center'>
 				<button
-					class='bg-blue-600 hover:bg-blue-500 text-white px-12 py-5 rounded-full font-black transition-all shadow-2xl shadow-blue-500/40 text-lg uppercase tracking-widest animate-pulse btn-login'>
+					class='bg-blue-600 hover:bg-blue-500 text-white px-12 py-5 rounded-full font-black transition-all shadow-2xl shadow-blue-500/40 text-lg uppercase tracking-widest animate-pulse btn-request'>
 					Get Started with Alpha
 				</button>
 			</div>
@@ -204,8 +199,7 @@
 			</div>
 		</div>
 	</section>
-	<section
-		id='how-it-works'
+	<section		
 		class='py-32 bg-slate-950 text-white overflow-hidden relative'>
 		<div
 			class='max-w-7xl mx-auto px-6 relative z-10 text-center'>
@@ -318,6 +312,7 @@
 		id='video-gallery'
 		class='py-32 px-6 bg-white dark:bg-slate-950 border-t border-slate-100 dark:border-slate-900'>
 		<div
+			id='how-it-works'
 			class='max-w-7xl mx-auto'>
 			<div
 				class='reveal text-center mb-24'>
@@ -447,7 +442,7 @@
 				Join our exclusive Alpha group and start building systems that truly reflect how your business works.
 			</p>
 			<button
-				class='bg-white text-blue-600 px-16 py-6 rounded-full font-black text-2xl hover:bg-slate-100 transition shadow-2xl uppercase tracking-widest active:scale-95 btn-login'>
+				class='bg-white text-blue-600 px-16 py-6 rounded-full font-black text-2xl hover:bg-slate-100 transition shadow-2xl uppercase tracking-widest active:scale-95 btn-request'>
 				Request Alpha Access
 			</button>
 		</div>
@@ -541,13 +536,6 @@
 							How it Works
 						</a>
 					</li>
-					<li>
-						<a
-							href='#examples'
-							class='hover:text-blue-400 transition'>
-							Examples
-						</a>
-					</li>
 				</ul>
 			</div>
 			<div>
@@ -559,9 +547,9 @@
 					class='space-y-5 text-sm text-slate-500'>
 					<li>
 						<a
-							href='./corporate.html'
+							href='./about.html'
 							class='hover:text-blue-400 transition'>
-							Corporate
+							About us
 						</a>
 					</li>
 					<li>
@@ -598,21 +586,52 @@
 			</div>
 		</div>
 		<div
-			class='max-w-7xl mx-auto border-t border-white/5 pt-12 flex flex-col md:flex-row justify-between items-center gap-8'>
-			<p
-				class='text-[10px] text-slate-600 font-bold uppercase tracking-[0.4em] font-inter'>
+			class='py-12 text-center text-gray-400 dark:text-gray-600 text-[12px] border-t border-gray-100 dark:border-gray-900 tracking-[0.1em] font-inter'>
+			<p>
 				© 2026 Collab Engine Inc. All rights reserved.
 			</p>
-			<div
-				class='flex items-center gap-4'>
-				<span
-					class='w-2 h-2 rounded-full bg-emerald-500 animate-pulse'>
-				</span>
-				<span
-					class='text-[10px] text-slate-500 font-bold uppercase tracking-widest font-inter'>
-					Global Node: Franca-SP / Active
-				</span>
-			</div>
 		</div>
 	</footer>
+	<div id="waitlist-modal" class="fixed inset-0 z-[100] hidden">
+		<div id="modal-backdrop" class="absolute inset-0 bg-slate-950/60 backdrop-blur-sm"></div>
+		
+		<div class="absolute inset-0 flex items-end md:items-center justify-center pointer-events-none">
+			<div class="bg-white dark:bg-slate-900 w-full md:max-w-md rounded-t-[2.5rem] md:rounded-[2.5rem] p-8 md:p-10 shadow-2xl pointer-events-auto transform translate-y-full transition-transform duration-500 ease-out" id="modal-content">
+				
+				<div class="flex justify-between items-start mb-6">
+					<div>
+						<h3 class="text-2xl font-black tracking-tighter dark:text-white uppercase italic">Join the Alpha</h3>
+						<p class="text-slate-500 text-sm">Enter your work email to join our waitlist.</p>
+					</div>
+					<button id="close-modal" class="text-slate-400 hover:text-slate-600 dark:hover:text-white transition-colors">
+						<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+					</button>
+				</div>
+
+				<form id="waitlist-form" class="space-y-4">
+					<input 
+						type="email" 
+						disabled 
+						placeholder="name@company.com" 
+						class="w-full p-4 rounded-2xl bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 outline-none text-base cursor-not-allowed opacity-60 dark:text-slate-400"
+					>
+					
+					<button 
+						type="button" 
+						disabled 
+						class="w-full bg-slate-200 dark:bg-slate-800 text-slate-500 dark:text-slate-400 p-4 rounded-full font-black uppercase tracking-widest cursor-not-allowed border border-slate-300 dark:border-slate-700"
+					>
+						Opening Soon
+					</button>
+					
+					<div class="flex justify-center items-center gap-2 pt-2">
+						<span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
+						<p class="text-[10px] text-center text-amber-600 dark:text-amber-500 uppercase tracking-widest font-bold">
+							Finalizing waitlist logic
+						</p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>	
 </div>

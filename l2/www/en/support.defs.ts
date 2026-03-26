@@ -1,8 +1,8 @@
-/// <mls fileReference="_102031_/l2/www/en/corporate.defs.ts" enhancement="_blank" />
+/// <mls fileReference="_102031_/l2/www/en/support.defs.ts" enhancement="_blank"/>
 
 export const asis: mls.defs.AsIs = {
   "meta": {
-    "fileReference": "_102031_/l2/www/en/corporate.ts",
+    "fileReference": "_102031_/l2/www/en/support.ts",
     "componentType": "page",
     "componentScope": "appFrontEnd",
     "languages": [
@@ -11,24 +11,26 @@ export const asis: mls.defs.AsIs = {
   },
   "references": {
     "webComponents": [
-      
+     
     ],
     "imports": [
+    
     ]
   },
   "codeInsights": {
     "unusedImports": [
-
+     
     ]
   },
   "asIs": {
     "semantic": {
-      "generalDescription": "TypeScript class CorporateEn102031 extending CollabLandingPage",
+      "generalDescription": "TypeScript class SupportEn102031 extending CollabPageElement",
       "businessCapabilities": [],
-      "technicalCapabilities": [],
+      "technicalCapabilities": [
+        
+      ],
       "implementedFeatures": [],
       "constraints": []
     }
   }
 }
-    

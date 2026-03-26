@@ -1,0 +1,164 @@
+<div class="bg-white text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300 antialiased">
+
+    <nav class="p-6 border-b border-slate-100 dark:border-slate-900 bg-white/90 dark:bg-slate-950/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center text-xl font-black tracking-tighter">
+                <a href="landingpage.html" class="flex items-center">
+                    <img src="./assets/images/collab.svg" alt="C" class="h-8">ollab.codes
+                </a>
+            </div>
+            <a
+				href='javascript:history.back()'
+				class='text-sm font-semibold text-blue-600 dark:text-blue-400 hover:underline'>
+				Back
+			</a>
+        </div>
+    </nav>
+
+    <header class="hero-bg py-24 flex flex-col justify-center items-center text-center text-white px-6 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto relative z-10">
+            <h1 class="text-4xl md:text-6xl font-black mb-6 tracking-tighter">How can we <span class="text-blue-400">help?</span></h1>
+            <p class="text-lg opacity-80 mb-10 font-light max-w-2xl mx-auto">Find documentation, troubleshoot issues, or connect with our technical success team.</p>
+            
+            <div class="relative max-w-xl mx-auto">
+                <input type="text" placeholder="Search for articles, guides..." class="w-full bg-white/10 border border-white/20 rounded-2xl py-4 px-6 focus:outline-none focus:ring-2 focus:ring-blue-500 backdrop-blur-md transition-all">
+                <i class="fas fa-search absolute right-6 top-1/2 -translate-y-1/2 text-white/40"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="py-20 px-6">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="reveal p-8 rounded-[2.5rem] bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 group hover:border-blue-500 transition-all duration-500">
+                    <div class="w-14 h-14 bg-blue-100 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center text-2xl mb-6 text-blue-600 group-hover:rotate-6 transition-transform">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h4 class="text-xl font-black mb-3">Documentation</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">In-depth guides on application generation, data patterns, and deployment.</p>
+                    <a href="#" class="text-blue-600 font-bold text-xs uppercase tracking-widest hover:underline">Explore Guides →</a>
+                </div>
+
+                <div class="reveal p-8 rounded-[2.5rem] bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 group hover:border-blue-500 transition-all duration-500" style="transition-delay: 100ms;">
+                    <div class="w-14 h-14 bg-blue-100 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center text-2xl mb-6 text-blue-600 group-hover:rotate-6 transition-transform">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h4 class="text-xl font-black mb-3">System Status</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">Check real-time status of the Collab Engine nodes and infrastructure.</p>
+                    <a href="#" class="text-blue-600 font-bold text-xs uppercase tracking-widest hover:underline">Check Status →</a>
+                </div>
+
+                <div class="reveal p-8 rounded-[2.5rem] bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 group hover:border-blue-500 transition-all duration-500" style="transition-delay: 200ms;">
+                    <div class="w-14 h-14 bg-blue-100 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center text-2xl mb-6 text-blue-600 group-hover:rotate-6 transition-transform">
+                        <i class="fab fa-discord"></i>
+                    </div>
+                    <h4 class="text-xl font-black mb-3">Community</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">Join our developer ecosystem to share workflows and components.</p>
+                    <a href="#" class="text-blue-600 font-bold text-xs uppercase tracking-widest hover:underline">Join Discord →</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 px-6 bg-slate-50 dark:bg-slate-900/20 border-t border-slate-100 dark:border-slate-900">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <h3 class="text-xs font-bold uppercase tracking-widest text-blue-600 mb-4">FAQ</h3>
+                    <h2 class="text-4xl font-black tracking-tighter italic">Common Questions</h2>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="reveal p-6 rounded-3xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-sm">
+                        <h5 class="font-bold text-lg mb-2">How do I export my generated code?</h5>
+                        <p class="text-slate-500 text-sm">Once the mission is complete, you can download the full repository via the CLI or the Alpha Dashboard.</p>
+                    </div>
+                    <div class="reveal p-6 rounded-3xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-sm" style="transition-delay: 100ms;">
+                        <h5 class="font-bold text-lg mb-2">Can I use my own AWS infrastructure?</h5>
+                        <p class="text-slate-500 text-sm">Yes. Collab is designed for sovereignty. You can deploy the generated containers directly to your own VPC.</p>
+                    </div>
+                    <div class="reveal p-6 rounded-3xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-sm" style="transition-delay: 200ms;">
+                        <h5 class="font-bold text-lg mb-2">Is the AI trained on my data?</h5>
+                        <p class="text-slate-500 text-sm">No. We use private models. Your business logic and data patterns are never used to train global models.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-32 bg-slate-950 text-white overflow-hidden relative">
+            <div class="absolute inset-0 bg-dot-pattern opacity-5"></div>
+            <div class="max-w-4xl mx-auto text-center relative z-10 px-6">
+                <h2 class="text-4xl font-black mb-8 italic tracking-tighter">Still need help?</h2>
+                <p class="text-slate-400 mb-12 font-light">If you can't find what you are looking for, our engineers are ready to assist.</p>
+                
+                <div class="flex flex-col md:flex-row gap-6 justify-center">
+                    <a href="mailto:support@collab.codes" class="bg-blue-600 hover:bg-blue-500 text-white px-10 py-4 rounded-full font-black transition-all shadow-xl shadow-blue-500/20 uppercase tracking-widest text-sm">
+                        Open a Ticket
+                    </a>
+                    <a href="#" class="glass-card hover:bg-white/5 text-white px-10 py-4 rounded-full font-black transition-all uppercase tracking-widest text-sm border border-white/10">
+                        Live Chat (Alpha)
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-slate-950 text-white pt-24 pb-12 px-6 border-t border-white/5 font-inter text-inter">
+        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-16 mb-24">
+            <div class="col-span-2 md:col-span-1">
+                <div class="flex items-center text-2xl font-black tracking-tighter mb-8 font-inter">
+                    <img src="./assets/images/collab.svg" alt="C" class="h-8">ollab.codes
+                </div>
+                <p class="text-slate-500 text-sm leading-relaxed max-w-xs font-inter mb-8">
+                    Architecting the next generation of autonomous enterprise software.
+                </p>
+                <div class="flex gap-6 text-slate-400">
+                    <a href="https://x.com/collab_codes" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors" title="X (Twitter)">
+                        <i class="fab fa-x-twitter text-xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/collab-codes/" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors" title="LinkedIn">
+                        <i class="fab fa-linkedin-in text-xl"></i>
+                    </a>
+                    <a href="https://www.instagram.com/collabcodes/" target="_blank" rel="noopener noreferrer" class="hover:text-pink-500 transition-colors" title="Instagram">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h5 class="text-[10px] font-black uppercase tracking-[0.3em] text-white mb-8">Quick Links</h5>
+                <ul class="space-y-5 text-sm text-slate-500">
+                    <li><a href="landingpage.html#concept" class="hover:text-blue-400 transition">Concept</a></li>
+                    <li><a href="landingpage.html#how-it-works" class="hover:text-blue-400 transition">How it Works</a></li>
+                    <li><a href="landingpage.html#examples" class="hover:text-blue-400 transition">Examples</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="text-[10px] font-black uppercase tracking-[0.3em] text-white mb-8">Company</h5>
+                <ul class="space-y-5 text-sm text-slate-500">
+                    <li><a href="./corporate.html" class="hover:text-blue-400 transition">Corporate</a></li>
+                    <li><a href="support.html" class="hover:text-blue-400 transition">Support</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="text-[10px] font-black uppercase tracking-[0.3em] text-white mb-8">Legal</h5>
+                <ul class="space-y-5 text-sm text-slate-500">
+                    <li><a href="./terms.html" class="hover:text-blue-400 transition">Terms</a></li>
+                    <li><a href="./policy.html" class="hover:text-blue-400 transition">Privacy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto border-t border-white/5 pt-12 flex flex-col md:flex-row justify-between items-center gap-8">
+            <p class="text-[10px] text-slate-600 font-bold uppercase tracking-[0.4em] font-inter">&copy; 2026 Collab Engine Inc. All rights reserved.</p>
+            <div class="flex items-center gap-4">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span class="text-[10px] text-slate-500 font-bold uppercase tracking-widest font-inter">Global Node: Franca-SP / Active</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Intersection Observer for scroll animations
+        const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('active'); });
+        }, observerOptions);
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+
+</div>

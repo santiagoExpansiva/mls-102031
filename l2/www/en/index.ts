@@ -1,174 +1,180 @@
 /// <mls fileReference="_102031_/l2/www/en/index.ts" enhancement="_102032_/l2/enhancementLandingPage" />
-
-function setEvents() {
-    const sectionVideos: SectionVideos = {
-        title: "How It Works",
-        real_product: {
-            title: "Examples",
-            videos: [
-                {
-                    title: "PetShop",
-                    description: "A simple pet shop application"
-                },
-                {
-                    title: "TodoApp",
-                    description: "A simple todo application"
-                },
-                {
-                    title: "IndustryApp",
-                    description: "A simple industry application"
-                },
-                {
-                    title: "EcommerceApp",
-                    description: "A simple ecommerce application"
-                }
-            ]
-        },
-        customization: {
-            title: "Easy Customization",
-            videos: [
-                {
-                    title: "Support multiple languages",
-                    description: "Make the application ready for multiple languages and locales"
-                },
-                {
-                    title: "Theming",
-                    description: "Adapt themes and visual identity"
-                },
-                {
-                    title: "Layout",
-                    description: "Adapt the layout to different use cases and user preferences"
-                },
-                {
-                    title: "Text Editor",
-                    description: "Edit custom or AI-generated text with ease"
-                },
-                {
-                    title: "Custom Components",
-                    description: "Use or create custom components and swap them for alternative implementations"
-                }
-            ]
-        },
-        business_fit: {
-            title: "Adapted to Your Business",
-            videos: [
-                {
-                    title: "Business Rules",
-                    description: "Create business rules, conditions, and automated actions"
-                },
-                {
-                    title: "Expand with New Pages",
-                    description: "Add new pages and connect them to the application menu"
-                },
-                {
-                    title: "Access Control",
-                    description: "Control access, permissions, and protected areas of the application"
-                },
-                {
-                    title: "External Integrations",
-                    description: "Integrate the application with other systems and APIs"
-                }
-            ]
-        },
-        technical_architecture: {
-            title: "Technical Foundation",
-            videos: [
-                {
-                    title: "Interface Technology",
-                    description: "Inside the frontend architecture and technologies used"
-                },
-                {
-                    title: "Application Backend",
-                    description: "Inside the backend architecture and technologies used"
-                },
-                {
-                    title: "Data Layer",
-                    description: "Inside the data architecture and storage strategy"
-                },
-                {
-                    title: "DevOps",
-                    description: "Monitoring the live system, from errors to traffic and operational metrics"
-                }
-            ]
-        },
-        ai_collaboration: {
-            title: "AI Working With You",
-            videos: [
-                {
-                    title: "From Prompt to System",
-                    description: "Using an initial prompt, refining requirements, and building complete systems"
-                },
-                {
-                    title: "AI Customization",
-                    description: "How AI helps customize the application after generation"
-                },
-                {
-                    title: "AI Workflow",
-                    description: "How to use AI to manage your workflow and automate tasks"
-                },
-                {
-                    title: "AI in Automation",
-                    description: "Using AI to execute business commands and operational actions"
-                }
-            ]
-        },
-        performance: {
-            title: "Performance and Scalability",
-            videos: [
-                {
-                    title: "Performance by Design",
-                    description: "Designed for performance from the start"
-                },
-                {
-                    title: "Scaling the System",
-                    description: "Scaling the application to handle increasing load and data"
-                },
-                {
-                    title: "Observability",
-                    description: "Infrastructure and application monitoring in practice"
-                },
-                {
-                    title: "Runtime Footprint",
-                    description: "System resource usage and platform requirements in practice"
-                }
-            ]
-        }
-    };
-
-    renderVideoSection(sectionVideos);
-    setScrollEffects();
-    setLoginEvent();
-}
-
-function renderVideoSection(sectionVideos: SectionVideos): void {
-    const container = document.getElementById('video-groups-container') as HTMLDivElement | null;
-    const mainTitle = document.getElementById('video-main-title') as HTMLHeadingElement | null;
-
-    if (!container || !mainTitle) {
-        console.error("Elementos de container de vídeo não encontrados.");
-        return;
+class Index {
+    constructor() { 
+        this.setEvents();
     }
 
-    // Título Principal
-    mainTitle.textContent = sectionVideos.title as string;
+    setEvents() {
+        const sectionVideos: SectionVideos = {
+            title: "How It Works",
+            real_product: {
+                title: "Examples",
+                videos: [
+                    {
+                        title: "PetShop",
+                        description: "A simple pet shop application"
+                    },
+                    {
+                        title: "TodoApp",
+                        description: "A simple todo application"
+                    },
+                    {
+                        title: "IndustryApp",
+                        description: "A simple industry application"
+                    },
+                    {
+                        title: "EcommerceApp",
+                        description: "A simple ecommerce application"
+                    }
+                ]
+            },
+            customization: {
+                title: "Easy Customization",
+                videos: [
+                    {
+                        title: "Support multiple languages",
+                        description: "Make the application ready for multiple languages and locales"
+                    },
+                    {
+                        title: "Theming",
+                        description: "Adapt themes and visual identity"
+                    },
+                    {
+                        title: "Layout",
+                        description: "Adapt the layout to different use cases and user preferences"
+                    },
+                    {
+                        title: "Text Editor",
+                        description: "Edit custom or AI-generated text with ease"
+                    },
+                    {
+                        title: "Custom Components",
+                        description: "Use or create custom components and swap them for alternative implementations"
+                    }
+                ]
+            },
+            business_fit: {
+                title: "Adapted to Your Business",
+                videos: [
+                    {
+                        title: "Business Rules",
+                        description: "Create business rules, conditions, and automated actions"
+                    },
+                    {
+                        title: "Expand with New Pages",
+                        description: "Add new pages and connect them to the application menu"
+                    },
+                    {
+                        title: "Access Control",
+                        description: "Control access, permissions, and protected areas of the application"
+                    },
+                    {
+                        title: "External Integrations",
+                        description: "Integrate the application with other systems and APIs"
+                    }
+                ]
+            },
+            technical_architecture: {
+                title: "Technical Foundation",
+                videos: [
+                    {
+                        title: "Interface Technology",
+                        description: "Inside the frontend architecture and technologies used"
+                    },
+                    {
+                        title: "Application Backend",
+                        description: "Inside the backend architecture and technologies used"
+                    },
+                    {
+                        title: "Data Layer",
+                        description: "Inside the data architecture and storage strategy"
+                    },
+                    {
+                        title: "DevOps",
+                        description: "Monitoring the live system, from errors to traffic and operational metrics"
+                    }
+                ]
+            },
+            ai_collaboration: {
+                title: "AI Working With You",
+                videos: [
+                    {
+                        title: "From Prompt to System",
+                        description: "Using an initial prompt, refining requirements, and building complete systems"
+                    },
+                    {
+                        title: "AI Customization",
+                        description: "How AI helps customize the application after generation"
+                    },
+                    {
+                        title: "AI Workflow",
+                        description: "How to use AI to manage your workflow and automate tasks"
+                    },
+                    {
+                        title: "AI in Automation",
+                        description: "Using AI to execute business commands and operational actions"
+                    }
+                ]
+            },
+            performance: {
+                title: "Performance and Scalability",
+                videos: [
+                    {
+                        title: "Performance by Design",
+                        description: "Designed for performance from the start"
+                    },
+                    {
+                        title: "Scaling the System",
+                        description: "Scaling the application to handle increasing load and data"
+                    },
+                    {
+                        title: "Observability",
+                        description: "Infrastructure and application monitoring in practice"
+                    },
+                    {
+                        title: "Runtime Footprint",
+                        description: "System resource usage and platform requirements in practice"
+                    }
+                ]
+            }
+        };
 
-    // Função auxiliar para formatar a chave (ex: real_product -> Real Product)
-    const formatKey = (key: string): string => {
-        return key.split('_')
-            .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-            .join(' ');
-    };
+        this.renderVideoSection(sectionVideos);
+        this.setScrollEffects();
+        this.setLoginEvent();
+        //setRequestWaitingList();
+        this.prepareWaitingListModal();
+    }
 
-    // Iterar sobre as entradas do objeto
-    Object.entries(sectionVideos).forEach(([key, value]) => {
-        // Pulamos a chave 'title' que é o título geral da seção
-        if (key === 'title' || typeof value === 'string') return;
+    renderVideoSection(sectionVideos: SectionVideos): void {
+        const container = document.getElementById('video-groups-container') as HTMLDivElement | null;
+        const mainTitle = document.getElementById('video-main-title') as HTMLHeadingElement | null;
 
-        const group = value as VideoGroup;
-        const groupTitle = formatKey(key);
-        const groupDescription = group.title;
+        if (!container || !mainTitle) {
+            console.error("Elementos de container de vídeo não encontrados.");
+            return;
+        }
 
-        const groupHtml = `
+        // Título Principal
+        mainTitle.textContent = sectionVideos.title as string;
+
+        // Função auxiliar para formatar a chave (ex: real_product -> Real Product)
+        const formatKey = (key: string): string => {
+            return key.split('_')
+                .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+                .join(' ');
+        };
+
+        // Iterar sobre as entradas do objeto
+        Object.entries(sectionVideos).forEach(([key, value]) => {
+            // Pulamos a chave 'title' que é o título geral da seção
+            if (key === 'title' || typeof value === 'string') return;
+
+            const group = value as VideoGroup;
+            const groupTitle = formatKey(key);
+            const groupDescription = group.title;
+
+            const groupHtml = `
         <div class="reveal">
             <div class="mb-10">
                 <div class="flex items-center gap-4 mb-2">
@@ -200,51 +206,110 @@ function renderVideoSection(sectionVideos: SectionVideos): void {
         </div>
     `;
 
-        container.insertAdjacentHTML('beforeend', groupHtml);
-    });
+            container.insertAdjacentHTML('beforeend', groupHtml);
+        });
 
 
-}
+    }
 
-function setScrollEffects() {
-    const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.1
-    };
+    setScrollEffects() {
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('active');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    }
+
+    setLoginEvent() {
+
+        const buttons = document.querySelectorAll('.btn-login');
+        buttons.forEach(button => {
+            button.addEventListener('click', (event) => {
+                event.preventDefault();
+
+                const isInsideIframe = window.self !== window.top;
+
+                if (isInsideIframe) {
+                    const params = {
+                        type: 'iframeL7',
+                        action: 'login'
+                    };
+                    window.parent.postMessage(params, '*');
+                } else {
+                    window.location.href = 'https://on.collab.codes/?signin';
+                }
+            });
+        });
+
+    }
+
+    setRequestWaitingList() {
+        const buttons = document.querySelectorAll('.btn-request');
+        buttons.forEach(button => {
+            button.addEventListener('click', (event) => {
+                event.preventDefault();
+                alert('Coming soon. Please check back shortly.');
+            });
+        });
+    }
+
+    closeModal() {
+        const modal = document.getElementById('waitlist-modal');
+        const modalContent = document.getElementById('modal-content');
+        if (!modal || !modalContent) return;
+        modalContent.classList.add('translate-y-full');
+        setTimeout(() => {
+            modal.classList.add('hidden');
+        }, 500);
+    }
+
+    openModal() {
+        const modal = document.getElementById('waitlist-modal');
+        const modalContent = document.getElementById('modal-content');
+        if (!modal || !modalContent) return;
+        modal.classList.remove('hidden');
+        // Pequeno timeout para permitir que a transição de CSS aconteça
+        setTimeout(() => {
+            modalContent.classList.remove('translate-y-full');
+        }, 10);
+    }
+
+    prepareWaitingListModal() {
+        const btnRequests = document.querySelectorAll('.btn-request');
+        const btnClose = document.getElementById('close-modal');
+        const backdrop = document.getElementById('modal-backdrop');
+        const waitlistForm = document.getElementById('waitlist-form');
+
+        btnRequests.forEach(btn => btn.addEventListener('click', this.openModal));
+
+        btnClose?.addEventListener('click', this.closeModal);
+        backdrop?.addEventListener('click', this.closeModal);
+
+        waitlistForm?.addEventListener('submit', (e: SubmitEvent) => {
+            e.preventDefault();
+            const form = e.currentTarget as HTMLFormElement;
+            const input = form.querySelector('input') as HTMLInputElement | null;
+
+            if (input) {
+                const email: string = input.value;
+                alert(`Success! ${email} has been added to the waitlist.`);
+                this.closeModal();
+                form.reset();
             }
         });
-    }, observerOptions);
 
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    }
 }
 
-function setLoginEvent() {
-
-    const buttons = document.querySelectorAll('.btn-login');
-    buttons.forEach(button => {
-        button.addEventListener('click', (event) => {
-            event.preventDefault();
-
-            const isInsideIframe = window.self !== window.top;
-
-            if (isInsideIframe) {
-                const params = {
-                    type: 'iframeL7',
-                    action: 'login'
-                };
-                window.parent.postMessage(params, '*');
-            } else {
-                window.location.href = 'https://on.collab.codes/?signin';
-            }
-        });
-    });
-
-}
-
-setEvents()
+new Index();
