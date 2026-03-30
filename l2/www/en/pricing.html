@@ -1,0 +1,388 @@
+<div class="bg-white text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300 antialiased">
+
+    <nav class="p-6 border-b border-slate-100 dark:border-slate-900 bg-white/90 dark:bg-slate-950/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center text-xl font-black tracking-tighter">
+                <a href="./index.html" class="flex items-center">
+                    <img src="./assets/images/collab.svg" alt="C" class="h-8">ollab.codes
+                </a>
+            </div>
+            <a href="javascript:history.back()" class="text-sm font-semibold text-blue-600 dark:text-blue-400 hover:underline">Back</a>
+        </div>
+    </nav>
+
+    <header class="hero-bg py-24 flex flex-col justify-center items-center text-center text-white px-6 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto relative z-10">
+            <span class="inline-block text-[10px] font-bold uppercase tracking-[0.4em] text-blue-400 mb-6">Simple, transparent pricing</span>
+            <h1 class="text-4xl md:text-6xl font-black mb-6 tracking-tighter">
+                Build software at the
+                <span class="bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">speed of AI</span>
+            </h1>
+            <p class="text-lg opacity-80 mb-10 font-light max-w-2xl mx-auto">Start free. Scale when you're ready. You own your code — always.</p>
+
+            <!-- Billing toggle -->
+            <div class="inline-flex items-center gap-3 bg-white/10 border border-white/20 rounded-full px-2 py-1.5 backdrop-blur-md" id="billing-toggle">
+                <button id="btn-monthly" class="px-5 py-2 rounded-full text-xs font-bold uppercase tracking-widest transition-all bg-white text-slate-900">Monthly</button>
+                <button id="btn-annual" class="px-5 py-2 rounded-full text-xs font-bold uppercase tracking-widest transition-all text-white/70 hover:text-white">Annual</button>
+                <span class="text-[10px] font-bold text-green-400 uppercase tracking-wider pr-3">Save 20%</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Pricing Cards -->
+        <section class="py-20 px-6 -mt-8 relative z-10">
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <!-- Free -->
+                <div class="reveal pricing-card rounded-[2.5rem] bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-8 flex flex-col">
+                    <div class="mb-8">
+                        <span class="text-[10px] font-bold uppercase tracking-[0.3em] text-slate-400">Starter</span>
+                        <div class="mt-3 flex items-end gap-1">
+                            <span class="text-5xl font-black tracking-tighter">$0</span>
+                            <span class="text-slate-400 text-sm mb-2">/month</span>
+                        </div>
+                        <p class="text-slate-500 text-sm mt-3 leading-relaxed">Explore the platform. Build locally. No credit card required.</p>
+                    </div>
+
+                    <ul class="space-y-3 flex-1 mb-8">
+                        <li class="flex items-start gap-3 text-sm">
+                            <svg class="w-4 h-4 text-blue-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                            <span>1 local project (temporary, not saved)</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-sm">
+                            <svg class="w-4 h-4 text-blue-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                            <span>$10 AI credits (first month only)</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-sm">
+                            <svg class="w-4 h-4 text-blue-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                            <span>AI-powered code generation</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-sm">
+                            <svg class="w-4 h-4 text-blue-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                            <span>Community support (GitHub Issues)</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-slate-400">
+                            <svg class="w-4 h-4 text-slate-300 dark:text-slate-700 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                            <span>No project publishing</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-slate-400">
+                            <svg class="w-4 h-4 text-slate-300 dark:text-slate-700 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                            <span>No GitHub / GitLab integration</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-slate-400">
+                            <svg class="w-4 h-4 text-slate-300 dark:text-slate-700 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                            <span>Shared resources (variable performance)</span>
+                        </li>
+                    </ul>
+
+                    <a href="javascript:void(0)" class="block text-center border-2 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 px-8 py-3.5 rounded-full text-xs font-black uppercase tracking-widest hover:border-blue-500 hover:text-blue-600 transition-all">
+                        Start Free
+                    </a>
+                </div>
+
+                <!-- Pro -->
+                <div class="reveal pricing-card-featured rounded-[2.5rem] bg-slate-950 dark:bg-blue-950/40 border-2 border-blue-500 p-8 flex flex-col relative overflow-hidden shadow-2xl shadow-blue-500/20" style="transition-delay: 100ms;">
+                    <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-500 to-transparent"></div>
+                    <div class="absolute -top-px left-1/2 -translate-x-1/2">
+                        <span class="inline-block bg-blue-500 text-white text-[10px] font-black uppercase tracking-widest px-4 py-1 rounded-b-xl">Most Popular</span>
+                    </div>
+
+                    <div class="mb-8 pt-4">
+                        <span class="text-[10px] font-bold uppercase tracking-[0.3em] text-blue-400">Pro</span>
+                        <div class="mt-3 flex items-end gap-1">
+                            <span class="text-5xl font-black tracking-tighter text-white price-monthly">$99</span>
+                            <span class="text-5xl font-black tracking-tighter text-white price-annual hidden">$79</span>
+                            <span class="text-slate-400 text-sm mb-2">/month</span>
+                        </div>
+                        <p class="text-slate-400 text-xs mt-1 price-annual-note hidden">Billed annually ($950/year)</p>
+                        <p class="text-slate-400 text-sm mt-3 leading-relaxed">Build and operate real systems. Full AI orchestration included.</p>
+                    </div>
+
+                    <ul class="space-y-3 flex-1 mb-8">
+                        <li class="flex items-start gap-3 text-sm text-slate-200">
+                            <svg class="w-4 h-4 text-blue-400 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                            <span>1 workspace</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-slate-200">
+                            <svg class="w-4 h-4 text-blue-400 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                            <span>Up to 5 users included <span class="text-slate-500 text-xs">(+$1/active user)</span></span>
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-slate-200">
+                            <svg class="w-4 h-4 text-blue-400 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                            <span>Project publishing enabled</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-slate-200">
+                            <svg class="w-4 h-4 text-blue-400 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                            <span>GitHub &amp; GitLab integration</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-slate-200">
+                            <svg class="w-4 h-4 text-blue-400 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                            <span>Real-time collaboration</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-slate-200">
+                            <svg class="w-4 h-4 text-blue-400 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                            <span>AI Hub — multi-model orchestration</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-slate-200">
+                            <svg class="w-4 h-4 text-blue-400 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                            <span>AI usage billed separately (pay-as-you-go)</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-slate-200">
+                            <svg class="w-4 h-4 text-blue-400 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                            <span>Community + docs support</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-slate-200">
+                            <svg class="w-4 h-4 text-blue-400 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                            <span>30-day money-back guarantee</span>
+                        </li>
+                    </ul>
+
+                    <a href="javascript:void(0)" class="block text-center bg-blue-600 hover:bg-blue-500 text-white px-8 py-3.5 rounded-full text-xs font-black uppercase tracking-widest transition-all shadow-lg shadow-blue-500/30">
+                        Get Started
+                    </a>
+                </div>
+
+                <!-- Enterprise -->
+                <div class="reveal pricing-card rounded-[2.5rem] bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-8 flex flex-col" style="transition-delay: 200ms;">
+                    <div class="mb-8">
+                        <span class="text-[10px] font-bold uppercase tracking-[0.3em] text-slate-400">Enterprise</span>
+                        <div class="mt-3">
+                            <span class="text-5xl font-black tracking-tighter">Custom</span>
+                        </div>
+                        <p class="text-slate-500 text-sm mt-3 leading-relaxed">For large teams that need scale, control, and dedicated infrastructure.</p>
+                    </div>
+
+                    <ul class="space-y-3 flex-1 mb-8">
+                        <li class="flex items-start gap-3 text-sm">
+                            <svg class="w-4 h-4 text-blue-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                            <span>Multiple workspaces</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-sm">
+                            <svg class="w-4 h-4 text-blue-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                            <span>SSO + SLA</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-sm">
+                            <svg class="w-4 h-4 text-blue-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                            <span>Dedicated deploy (your AWS or custom cloud)</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-sm">
+                            <svg class="w-4 h-4 text-blue-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                            <span>Fully customized architecture</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-sm">
+                            <svg class="w-4 h-4 text-blue-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                            <span>Priority support via Collab Messages</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-sm">
+                            <svg class="w-4 h-4 text-blue-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                            <span>Multi-cloud provider support</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-sm">
+                            <svg class="w-4 h-4 text-blue-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                            <span>Agency &amp; partner program available</span>
+                        </li>
+                    </ul>
+
+                    <a href="mailto:sales@collab.codes" class="block text-center border-2 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 px-8 py-3.5 rounded-full text-xs font-black uppercase tracking-widest hover:border-blue-500 hover:text-blue-600 transition-all">
+                        Talk to Sales
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Additional cost note -->
+        <section class="py-12 px-6">
+            <div class="max-w-3xl mx-auto reveal">
+                <div class="rounded-[2rem] bg-blue-50 dark:bg-blue-950/30 border border-blue-100 dark:border-blue-900 p-8 text-center">
+                    <h3 class="text-sm font-black uppercase tracking-widest text-blue-600 mb-3">What else do I pay for?</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed max-w-xl mx-auto">
+                        Beyond the platform subscription, AI usage is billed per token via Stripe (pay-as-you-go or pre-paid). Hosting is managed and paid directly by you — many providers offer free tiers for low-traffic projects. Collab is engineered for maximum performance and resource efficiency.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Agency / Partner -->
+        <section class="py-20 px-6 bg-slate-50 dark:bg-slate-900/20 border-t border-slate-100 dark:border-slate-900">
+            <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
+                <div class="flex-1 reveal">
+                    <span class="text-[10px] font-bold uppercase tracking-[0.3em] text-orange-500 mb-4 block">Enterprise Partner</span>
+                    <h2 class="text-3xl md:text-4xl font-black tracking-tighter mb-4">Are you an agency or consultant?</h2>
+                    <p class="text-slate-500 leading-relaxed mb-6">Manage multiple clients, earn 20–30% recurring revenue, and deliver AI-generated software under your brand. Clients pay Collab directly — you get a cut every month.</p>
+                    <ul class="space-y-2 mb-8">
+                        <li class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                            <svg class="w-4 h-4 text-orange-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                            20–30% recurring commission per client
+                        </li>
+                        <li class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                            <svg class="w-4 h-4 text-orange-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                            Multi-client management dashboard (coming soon)
+                        </li>
+                        <li class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                            <svg class="w-4 h-4 text-orange-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                            White-label option available
+                        </li>
+                    </ul>
+                    <a href="mailto:partners@collab.codes" class="inline-block bg-orange-500 hover:bg-orange-400 text-white px-8 py-3.5 rounded-full text-xs font-black uppercase tracking-widest transition-all shadow-lg shadow-orange-500/20">
+                        Become a Partner
+                    </a>
+                </div>
+                <div class="reveal flex-shrink-0 w-full md:w-72" style="transition-delay: 150ms;">
+                    <div class="rounded-[2rem] bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-8 text-center shadow-xl">
+                        <div class="text-6xl font-black tracking-tighter text-orange-500 mb-2">20–30%</div>
+                        <div class="text-sm font-bold text-slate-500 uppercase tracking-widest">Recurring Revenue</div>
+                        <div class="mt-4 pt-4 border-t border-slate-100 dark:border-slate-800 text-xs text-slate-400 leading-relaxed">Per client, every month. Payments processed through Stripe.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="py-20 px-6 border-t border-slate-100 dark:border-slate-900">
+            <div class="max-w-3xl mx-auto">
+                <div class="text-center mb-16">
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-blue-600 mb-4 block">FAQ</span>
+                    <h2 class="text-4xl font-black tracking-tighter italic">Frequently Asked Questions</h2>
+                </div>
+
+                <div class="space-y-4" id="faq-list">
+
+                    <div class="faq-item reveal rounded-3xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 overflow-hidden">
+                        <button class="faq-trigger w-full text-left px-6 py-5 flex justify-between items-center font-bold text-base gap-4">
+                            What is the difference between Monthly and Annual plans?
+                            <svg class="faq-icon w-5 h-5 text-slate-400 shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="faq-body px-6 pb-5 hidden">
+                            <p class="text-slate-500 text-sm leading-relaxed">With the Annual plan you save up to 20% compared to monthly billing. The payment is made once per year, but the equivalent monthly rate is lower. You can switch to annual at any time.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal rounded-3xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 overflow-hidden" style="transition-delay: 50ms;">
+                        <button class="faq-trigger w-full text-left px-6 py-5 flex justify-between items-center font-bold text-base gap-4">
+                            What happens when my AI generation credits run out?
+                            <svg class="faq-icon w-5 h-5 text-slate-400 shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="faq-body px-6 pb-5 hidden">
+                            <p class="text-slate-500 text-sm leading-relaxed">On paid plans, you can purchase additional AI credits at any time via Stripe, or wait for the next monthly cycle to renew your limit. On the Free/Starter plan, additional credits cannot be purchased.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal rounded-3xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 overflow-hidden" style="transition-delay: 100ms;">
+                        <button class="faq-trigger w-full text-left px-6 py-5 flex justify-between items-center font-bold text-base gap-4">
+                            Can I try collab.codes before paying?
+                            <svg class="faq-icon w-5 h-5 text-slate-400 shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="faq-body px-6 pb-5 hidden">
+                            <p class="text-slate-500 text-sm leading-relaxed">Yes! The Starter plan is completely free and lets you create projects, test AI code generation, and explore basic collaboration features. No credit card required to get started. Note: source code cannot be saved on the free plan.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal rounded-3xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 overflow-hidden" style="transition-delay: 150ms;">
+                        <button class="faq-trigger w-full text-left px-6 py-5 flex justify-between items-center font-bold text-base gap-4">
+                            How does real-time collaboration work across plans?
+                            <svg class="faq-icon w-5 h-5 text-slate-400 shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="faq-body px-6 pb-5 hidden">
+                            <p class="text-slate-500 text-sm leading-relaxed">On the Pro plan and above, you get real-time collaboration for all users. We recommend that technical users handle prompts while business users validate the generated pages — making the workflow seamless between dev and business teams.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal rounded-3xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 overflow-hidden" style="transition-delay: 200ms;">
+                        <button class="faq-trigger w-full text-left px-6 py-5 flex justify-between items-center font-bold text-base gap-4">
+                            Can I change my plan after signing up?
+                            <svg class="faq-icon w-5 h-5 text-slate-400 shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="faq-body px-6 pb-5 hidden">
+                            <p class="text-slate-500 text-sm leading-relaxed">Yes, you can upgrade at any time. Your source code belongs to your company — however, if you leave the platform you lose access to easy publishing and the AI hub (multi-provider API management).</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal rounded-3xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 overflow-hidden" style="transition-delay: 250ms;">
+                        <button class="faq-trigger w-full text-left px-6 py-5 flex justify-between items-center font-bold text-base gap-4">
+                            What is included in the Free / Starter plan?
+                            <svg class="faq-icon w-5 h-5 text-slate-400 shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="faq-body px-6 pb-5 hidden">
+                            <p class="text-slate-500 text-sm leading-relaxed">Basic access to AI code generation, 1 local temporary project (not saved), $10 AI credits for the first month, and community support. It's ideal for testing the platform and personal projects.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal rounded-3xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 overflow-hidden" style="transition-delay: 300ms;">
+                        <button class="faq-trigger w-full text-left px-6 py-5 flex justify-between items-center font-bold text-base gap-4">
+                            Are my projects and generated code secure? Do you train AI on my data?
+                            <svg class="faq-icon w-5 h-5 text-slate-400 shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="faq-body px-6 pb-5 hidden">
+                            <p class="text-slate-500 text-sm leading-relaxed">Your projects and code are private by default. We do not use your data to train AI models. A GitHub or GitLab account is required to save and version your source code.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal rounded-3xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 overflow-hidden" style="transition-delay: 350ms;">
+                        <button class="faq-trigger w-full text-left px-6 py-5 flex justify-between items-center font-bold text-base gap-4">
+                            Is there a refund guarantee or trial period for paid plans?
+                            <svg class="faq-icon w-5 h-5 text-slate-400 shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="faq-body px-6 pb-5 hidden">
+                            <p class="text-slate-500 text-sm leading-relaxed">We offer a 30-day money-back guarantee on paid plans. If you are not satisfied, cancel and request a full refund within that period. Note: if you publish a site, the refund option is no longer available.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal rounded-3xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 overflow-hidden" style="transition-delay: 400ms;">
+                        <button class="faq-trigger w-full text-left px-6 py-5 flex justify-between items-center font-bold text-base gap-4">
+                            How does support work on each plan?
+                            <svg class="faq-icon w-5 h-5 text-slate-400 shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="faq-body px-6 pb-5 hidden">
+                            <p class="text-slate-500 text-sm leading-relaxed">All plans include community and documentation support (GitHub Issues) plus AI-assisted help. Enterprise plans add priority support via Collab Messages. We also have a network of agencies and professionals who can accompany your company in-depth.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal rounded-3xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 overflow-hidden" style="transition-delay: 450ms;">
+                        <button class="faq-trigger w-full text-left px-6 py-5 flex justify-between items-center font-bold text-base gap-4">
+                            Can I cancel my subscription at any time?
+                            <svg class="faq-icon w-5 h-5 text-slate-400 shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="faq-body px-6 pb-5 hidden">
+                            <p class="text-slate-500 text-sm leading-relaxed">Yes, cancellation is simple and can be done at any time from your account area. You keep access until the end of your paid period and there are no cancellation fees.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal rounded-3xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 overflow-hidden" style="transition-delay: 500ms;">
+                        <button class="faq-trigger w-full text-left px-6 py-5 flex justify-between items-center font-bold text-base gap-4">
+                            Besides the subscription, what other costs will I have?
+                            <svg class="faq-icon w-5 h-5 text-slate-400 shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="faq-body px-6 pb-5 hidden">
+                            <p class="text-slate-500 text-sm leading-relaxed">To build a professional site you will need AI tokens, billed per usage. Collab operates across multiple providers, optimizing for the best cost-quality balance. There is also a hosting cost — after the system is ready, hosting can be free on many providers for low-traffic projects, or paid for high-traffic systems. Collab is built for maximum performance and resource efficiency. For systems with thousands of RPM, we recommend a professional to calculate the right server size.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="py-32 bg-slate-950 text-white overflow-hidden relative">
+            <div class="absolute inset-0 bg-dot-pattern opacity-5"></div>
+            <div class="max-w-3xl mx-auto text-center relative z-10 px-6">
+                <h2 class="text-4xl font-black mb-6 italic tracking-tighter">Start building today</h2>
+                <p class="text-slate-400 mb-12 font-light">Free forever. Upgrade when your business demands it.</p>
+                <div class="flex flex-col md:flex-row gap-6 justify-center">
+                    <a href="javascript:void(0)" class="bg-blue-600 hover:bg-blue-500 text-white px-10 py-4 rounded-full font-black transition-all shadow-xl shadow-blue-500/20 uppercase tracking-widest text-sm">
+                        Get Started Free
+                    </a>
+                    <a href="mailto:sales@collab.codes" class="glass-card hover:bg-white/5 text-white px-10 py-4 rounded-full font-black transition-all uppercase tracking-widest text-sm border border-white/10">
+                        Talk to Sales
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-12 text-center text-gray-400 dark:text-gray-600 text-xs border-t border-gray-100 dark:border-gray-900 bg-white dark:bg-gray-950">
+        <p>© 2026 Collab Engine Inc. All rights reserved.</p>
+    </footer>
+
+</div>
