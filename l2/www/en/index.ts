@@ -1,5 +1,5 @@
 /// <mls fileReference="_102031_/l2/www/en/index.ts" enhancement="_102032_/l2/enhancementLandingPage" />
-class IndexPage1 {
+class IndexPage {
     constructor() { 
         this.setEvents();
     }
@@ -307,7 +307,7 @@ class IndexPage1 {
     }
 }
 
-new IndexPage1();
+new IndexPage();
 
 
 interface Video {
