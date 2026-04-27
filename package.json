@@ -13,6 +13,10 @@
             "less": "3.13.1",
             "esbuild": "^0.27.2",
             "mls-ci": "git+https://github.com/expansiva/mls-ci.git",
+            "mls-102027": "git+https://github.com/expansiva/mls-102027.git",
+            "mls-102025": "git+https://github.com/expansiva/mls-102025.git",
+            "mls-102020": "git+https://github.com/expansiva/mls-102020.git",
+            "mls-102032": "git+https://github.com/expansiva/mls-102032.git",    
             "node-fetch": "^2.7.0",
             "typescript": "^5.5.3"
         }
